@@ -10,6 +10,20 @@ const Navbar = () => {
     }
   return (
     <>
+       <style jsx='true'>
+                {`
+                    .active {
+                        width: 300px;
+                        border-radius: 20px;
+                    }
+                    .active .toggle::before{
+                        transform: translateY(0px) rotate(-405deg);
+                    }
+                    .active .toggle::after{
+                        transform: translateY(0px) rotate(225deg);
+                    }
+                `}
+            </style>
         <div className={`${styles.navigation} ${toggle ? "" : 'active'}`}>
             <ul>
                 <li>
@@ -61,7 +75,7 @@ const Navbar = () => {
                     </a>
                 </li>
             </ul>
-            <div onClick={handleClick} className={styles.toggle}></div>
+            <div onClick={handleClick} className={`${styles.toggle} toggle`}></div>
         </div>
     </>
   )

@@ -17,11 +17,6 @@
     transition: 0.5s;
 }
 
-/* .navigation.active{
-    width: 300px;
-    border-radius: 20px;
-} */
-
 .toggle{
     position: absolute;
     bottom: 15px;
@@ -58,14 +53,6 @@
     transform: translateY(5px);
     transition: 1s;
 }
-
-/* .navigation.active .toggle::before{
-    transform: translateY(0px) rotate(-405deg);
-}
-
-.navigation.active .toggle::before{
-    transform: translateY(0px) rotate(225deg);
-} */
 
 .navigation ul{
     position: absolute;
