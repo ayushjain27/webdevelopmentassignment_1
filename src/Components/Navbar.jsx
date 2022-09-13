@@ -8,6 +8,7 @@ const Navbar = () => {
     const handleClick = () => {
         setToggle(!toggle);        
     }
+
   return (
     <>
        <style jsx='true'>
